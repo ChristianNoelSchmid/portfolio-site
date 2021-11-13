@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimatedText } from '../AnimatedText';
+import { AnimatedText } from '../animated-text/animated-text-interface';
 
 @Component({
   selector: 'app-hero',
@@ -9,11 +9,11 @@ import { AnimatedText } from '../AnimatedText';
 export class HeroComponent implements OnInit {
 
   public animText: AnimatedText = {
-    staticText: "Hi, I'm Chris! I write ",
+    staticText: "Hi, I'm Chris. I write ",
     dynamicText: [
-      "Software!",
-      "Web Applications!",
-      "Video Games!"
+      "Software.",
+      "Web Applications.",
+      "Video Games."
     ],
   };
 

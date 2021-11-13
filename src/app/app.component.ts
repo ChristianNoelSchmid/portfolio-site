@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'resume-site';
   ngOnInit() {
     const colors = new Map([
-      ['primary-color', '#FA1E0D'],
+      ['primary-color', '#DA7A51'],
       ['primary-font', 'Raleway, sans-serif'],
       ['header-font', '"Source Code Pro", serif']
     ])

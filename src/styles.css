@@ -1,2 +1,14 @@
 @import url("~bootstrap/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Source+Code+Pro:wght@400;500&display=swap");
+
+p {
+  font-size: large;
+}
+
+nav {
+  font-family: var(--header-font);
+}
+
+body {
+  font-family: var(--primary-font);
+}

@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
-import { DynTextComponent } from './dyn-text/dyn-text.component';
+import { AnimatedTextComponent } from './animated-text/animated-text.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeroComponent,
-    DynTextComponent
+    AnimatedTextComponent,
   ],
   imports: [
     BrowserModule,

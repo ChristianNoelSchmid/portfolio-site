@@ -1,29 +1,44 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AnimatedText } from '../AnimatedText';
+import { AnimatedText } from './animated-text-interface';
 
 @Component({
-  selector: 'app-dyn-text',
-  templateUrl: './dyn-text.component.html',
-  styleUrls: ['./dyn-text.component.css']
+  selector: 'app-animated-text',
+  templateUrl: './animated-text.component.html',
+  styleUrls: ['./animated-text.component.css']
 })
-export class DynTextComponent implements OnInit {
+export class AnimatedTextComponent implements OnInit {
 
+  /**
+   * The static and dynamic text represented in this Component
+   */
   @Input() animText: AnimatedText = { staticText: "", dynamicText: [""] }
 
+  /**
+   * The element where the dynamic text will be written
+   */
   dynTextEl: HTMLElement | null = null;
+  /**
+   * The current index of the dynamic text selected in the AnimatedText array
+   */
   dynTextIndex: number = -1;
 
+  /**
+   * Initializes the static text, and begins the infinite loop
+   * where each dynamic text is written and deleted
+   */
   async ngOnInit(): Promise<void> {
     const staticTextEl = document.querySelector('.static');
-
-    if(staticTextEl) 
-      staticTextEl.textContent = this.animText?.staticText ?? "";
+    staticTextEl!.textContent = this.animText.staticText;
 
     this.dynTextEl = document.querySelector('.dynamic');
 
     await this.loop();
   }
 
+  /**
+   * Continually cycles through the dynamic texts
+   * adding them and removing them to the content
+   */
   async loop() {
     while(true) {
       await this.appendDynamicText();
@@ -32,6 +47,10 @@ export class DynTextComponent implements OnInit {
     }
   }
 
+  /**
+   * Appends the current dynamic text to the overall content
+   * one character at a time
+   */
   async appendDynamicText() {
 
     this.dynTextIndex += 1;
@@ -42,16 +61,20 @@ export class DynTextComponent implements OnInit {
     const text = this.animText.dynamicText[this.dynTextIndex];
     for(let i = 0; i < text.length; ++i) {
       this.dynTextEl!.textContent += text[i];
-      await this.sleep(100);
+      await this.sleep(50 + Math.random() * 100);
     }
   }
 
+  /**
+   * Removes the current dynamic text from the overall content,
+   * one character at a time.
+   */
   async removeDynamicText() {
     const text = this.animText.dynamicText[this.dynTextIndex];
 
     for(let i = 0; i < text.length; ++i) {
       this.dynTextEl!.textContent = this.dynTextEl!.textContent!.substring(0, this.dynTextEl!.textContent!.length - 1)
-      await this.sleep(100);
+      await this.sleep(75);
     }
   }
 

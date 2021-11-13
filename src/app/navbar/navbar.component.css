@@ -2,5 +2,11 @@ nav {
   font-size: large;
   background-color: transparent;
   position: absolute;
-  font-family: var(--header-font);
+
+  transition: box-shadow 0.25s, background-color 0.25s;
+}
+
+.nav-panel {
+  box-shadow: 2px 2px 5px #0009;
+  background-color: var(--primary-color);
 }

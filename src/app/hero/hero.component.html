@@ -1,17 +1,18 @@
-<section>
-    <div alt="A picture of Chris" class='hero-img'>
-        <div class='container row mb-4 align-items-center'>
-            <div class='col-md-10'>
-                <app-dyn-text [animText]='animText'></app-dyn-text>
-            </div>
-            <div class='col-md-2'>
-                <a class='flex justify-content-left btn-scroll' href='#about-me'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                    </svg>
-                </a>
-            </div>
+<section alt="A picture of Chris" class='hero-img'>
+    <div class='container row mb-4 align-items-center'>
+        <div class='col-md-10'>
+            <app-animated-text [animText]='animText'></app-animated-text>
+        </div>
+        <div class='col-md-2'>
+            <a class='flex justify-content-left btn-scroll' href='#about-me'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </a>
         </div>
     </div>
-    <div id='about-me' style='height: 100vh;'></div>
+</section>
+<section id='about-me' class='container mt-4' style='height: 100vh;'>
+    <h2><u><b>My Philosophy</b></u></h2>
+    <p>I believe in a life of <b>integrity</b>. This carries over into my personal life, my social life, and certainly my work life. Integrity means doing the best you can possibly do in any task, activity, or project.</p>
 </section>

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DynTextComponent } from './dyn-text.component';
+import { AnimatedTextComponent } from './animated-text.component';
 
 describe('DynTextComponent', () => {
-  let component: DynTextComponent;
-  let fixture: ComponentFixture<DynTextComponent>;
+  let component: AnimatedTextComponent;
+  let fixture: ComponentFixture<AnimatedTextComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DynTextComponent ]
+      declarations: [ AnimatedTextComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DynTextComponent);
+    fixture = TestBed.createComponent(AnimatedTextComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
