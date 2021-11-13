@@ -1,0 +1,6 @@
+nav {
+  font-size: large;
+  background-color: transparent;
+  position: absolute;
+  font-family: var(--header-font);
+}
