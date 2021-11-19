@@ -1,0 +1,36 @@
+.skill-group-list:nth-child(1) {
+  margin-left: 100px;
+}
+
+.skill-pane {
+  transition: background-color 1.0s, border 1.0s;
+  border-radius: 5px;
+}
+
+.skill-pane * {
+  transition: width 0.5s, color 0.5s;
+  line-height: 0.5em;
+}
+
+.skill-thumb {
+  height: 128px;
+  width: auto;
+}
+
+.focused {
+  background-color: var(--layout-accent-color);
+}
+
+/* 
+  The appear effect when the mouse hovers over a skill group.
+  Requires a non-touch screen and a min-width of 768px
+*/
+@media (hover: hover) and (min-width: 768px) {
+  /* .sr-only was taken from https://accessibility.18f.gov/hidden-content/ */
+  .sr-only {
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    width: 500px;
+    color: transparent;
+  }
+}

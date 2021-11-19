@@ -7,15 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  offsetY: number = 0;
-
   constructor() {}
 
   ngOnInit(): void {
-    document.addEventListener(
-      'scroll', 
-      event => this.offsetY = window.scrollY
-    );
   }
-
 }

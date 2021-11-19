@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AnimatedText } from '../animated-text/animated-text-interface';
+import { AnimatedText } from '../../animated-text/animated-text-interface';
 
 @Component({
   selector: 'app-hero',

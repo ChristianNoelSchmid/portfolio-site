@@ -2,6 +2,7 @@ nav {
   font-size: large;
   background-color: transparent;
   position: absolute;
+  min-width: 100%;
 
   transition: box-shadow 0.25s, background-color 0.25s;
 }

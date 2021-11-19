@@ -1,0 +1,18 @@
+<section class='container'>
+    <h2 class='mb-4'><b>My Skills</b></h2>
+    <aside *ngFor='let skillGroup of skillGroups;'
+        class='row justify-content-around align-items-center mt-4 p-4 skill-pane'
+        [class.focused]='skillGroup == selectedSkillGroup' (mouseover)='setSkillGroup(skillGroup)'
+        (mouseout)='setSkillGroup()'>
+        <img src='{{skillGroup.imgSrc}}' class='col-lg-3 skill-thumb'>
+        <div class='col-lg-9 row skill-details text-lg-left' [class.sr-only]='skillGroup != selectedSkillGroup'>
+            <div class='col-lg-4'>
+                <p *ngFor='let skill of skillGroup.skills'>{{skill}}</p>
+            </div>
+            <!-- visible only on large devices -->
+            <div class='col-lg-8 d-block d-lg-block'>
+                <p>{{skillGroup.description}}</p>
+            </div>
+        </div>
+    </aside>
+</section>
