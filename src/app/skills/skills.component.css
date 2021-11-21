@@ -20,7 +20,7 @@
   height: 100%;
 
   background-color: transparent;
-  transition: background-color 1s; 
+  transition: 1s; 
 }
 
 .skill-pane {

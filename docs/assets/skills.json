@@ -1,5 +1,6 @@
 [{
     "skillGroupName": "C#",
+    "backgroundImgSrc": "../../../assets/csharp-back.png",
     "imgSrc": "../../../assets/csharp.png",
     "skills": [
       "C#",
@@ -9,6 +10,7 @@
     "description": "C#!"
   }, {
     "skillGroupName": "Javascript",
+    "backgroundImgSrc": "../../../assets/js-back.png",
     "imgSrc": "../../../assets/js.png",
     "skills": [
       "Javascript",
@@ -19,6 +21,7 @@
     "description": "Javascript!"
   }, {
     "skillGroupName": "Google Cloud Platform",
+    "backgroundImgSrc": "../../../assets/gc-back.png",
     "imgSrc": "../../../assets/google-cloud.png",
     "skills": [
       "Compute Engine",
