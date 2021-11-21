@@ -1,11 +1,12 @@
 <section class='container'>
     <h2 class='mb-4'><b>My Skills</b></h2>
     <aside *ngFor='let skillGroup of skillGroups;'
-        class='row justify-content-around align-items-center mt-4 p-4 skill-pane'
-        [class.focused]='skillGroup == selectedSkillGroup' (mouseover)='setSkillGroup(skillGroup)'
+        class='row justify-content-around align-items-center mt-4 p-4 skill-pane' (mouseover)='setSkillGroup(skillGroup)'
         (mouseout)='setSkillGroup()'>
+        <div class='skill-back' [ngStyle]='{ "background-image": "url(" + skillGroup.backgroundImgSrc + ")" }'></div>
+        <div class='skill-back-overlay' [class.focused]='skillGroup == selectedSkillGroup'></div>
         <img src='{{skillGroup.imgSrc}}' class='col-lg-3 skill-thumb'>
-        <div class='col-lg-9 row skill-details text-lg-left' [class.sr-only]='skillGroup != selectedSkillGroup'>
+        <div class='col-lg-9 row skill-details text-lg-left align-items-center' [class.sr-only]='skillGroup != selectedSkillGroup'>
             <div class='col-lg-4'>
                 <p *ngFor='let skill of skillGroup.skills'>{{skill}}</p>
             </div>

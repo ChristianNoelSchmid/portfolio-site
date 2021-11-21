@@ -1,6 +1,7 @@
 export interface SkillGroup {
-    skillGroupName: string,
+    skillBackgroundName: string,
     imgSrc: string,  
+    backgroundImgSrc: string,
     skills: string[],
     description: string,
 }
