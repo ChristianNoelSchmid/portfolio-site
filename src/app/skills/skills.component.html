@@ -3,18 +3,23 @@
     <aside *ngFor='let skillGroup of skillGroups;'
         class='row justify-content-around align-items-center mt-4 p-4 skill-pane'
         (mouseover)='setSkillGroup(skillGroup)' (mouseout)='setSkillGroup()'>
+
+        <!-- Skill group background / back overlay -->
         <div class='skill-back' [ngStyle]='{ "background-image": "url(" + skillGroup.backgroundImgSrc + ")" }'></div>
         <div class='skill-back-overlay' [class.focused]='skillGroup == selectedSkillGroup'></div>
-        <img src='{{skillGroup.imgSrc}}' class='col-lg-3 skill-thumb'>
+        <!-- Skill group image -->
+        <img src='{{skillGroup.imgSrc}}' alt='{{skillGroup.skillName}}' class='col-lg-3 skill-thumb mb-4 mb-lg-0'>
+
         <div class='col-lg-9 row skill-details text-lg-left align-items-center'
             [class.sr-only]='skillGroup != selectedSkillGroup'>
-            <div class='col-lg-4'>
-                <p *ngFor='let skill of skillGroup.skills'>{{skill}}</p>
-            </div>
+            <!-- Skill group skills -->
+            <ul class='col-lg-6'>
+                <li *ngFor='let skill of skillGroup.skills'>{{skill}}</li>
+            </ul>
+
+            <!-- Skill Group description -->
             <!-- visible only on large devices -->
-            <div class='col-lg-8 d-block d-lg-block'>
-                <p>{{skillGroup.description}}</p>
-            </div>
+            <div class='col-lg-6 d-none d-lg-block skill-description' [innerHTML]='skillGroup.description'></div>
         </div>
     </aside>
 </section>

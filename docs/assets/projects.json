@@ -1,0 +1,16 @@
+[{
+    "name": "ChurchSearch",
+    "backgroundImgSrc": "",
+    "githubLink": "https://github.com/christiannoelschmid/church-search",
+    "description": "<p>Church search is a future, fullstack web application that seeks to connect individuals to faith-based organizations through a collection of questions that both parties take, which the webapp uses to associate individual to organization.</p><h3>Implemented Features</h3><ul><li>User authentication, using a combination of short-lived JSON web tokens, and a long-lived refresh tokens.</li><li>Backend database creation, and API interaction using Express.js and Prisma, with Typescript as the language of choice.</li></ul><h3>To Be Implemented</h3><ul><li>A frontend client, which handles API communications, created with the newest version of Angular.</li><li>Hosting of the webapp, using a combination of Google SQL Databases, Google Cloud Run, and Google Filestore.</li></ul>"
+}, {
+    "name": "Dungeon Crawler",
+    "backgroundImgSrc": "",
+    "githubLink": "https://github.com/ChristianNoelSchmid/DungeonCrawler",
+    "description": ""
+}, {
+    "name": "Resourceful Rails",
+    "backgroundImgSrc": "",
+    "githubLink": "https://github.com/",
+    "description": ""
+}]

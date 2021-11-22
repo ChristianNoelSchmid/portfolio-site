@@ -1,5 +1,5 @@
 [{
-    "skillGroupName": "C#",
+    "skillName": "C#",
     "backgroundImgSrc": "../../../assets/csharp-back.png",
     "imgSrc": "../../../assets/csharp.png",
     "skills": [
@@ -7,9 +7,9 @@
       "ASP.NET Core",
       "Unity Engine"
     ],
-    "description": "C#!"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }, {
-    "skillGroupName": "Javascript",
+    "skillName": "Javascript",
     "backgroundImgSrc": "../../../assets/js-back.png",
     "imgSrc": "../../../assets/js.png",
     "skills": [
@@ -18,9 +18,9 @@
       "Angular",
       "Express.js"
     ],
-    "description": "Javascript!"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }, {
-    "skillGroupName": "Google Cloud Platform",
+    "skillName": "Google Cloud Platform",
     "backgroundImgSrc": "../../../assets/gc-back.png",
     "imgSrc": "../../../assets/google-cloud.png",
     "skills": [
@@ -29,5 +29,5 @@
       "SQL Server",
       "App Engine"
     ],
-    "description": "Google Cloud"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 }]
