@@ -1,0 +1,11 @@
+<h2 class='mt-4'>My Projects</h2>
+<div *ngFor='let project of projects' class='mt-4 project-pane anchor-section'
+    [ngStyle]='{ "background-image": "url(" + project.backgroundImgSrc + ")" }' [id]='project.anchorTag'>
+    <div class='row align-items-center justify-content-left'>
+        <h3 class='col-6'>{{ project.name }}</h3>
+        <a [href]='project.githubLink' target='_blank' class='col-6'>
+            <input type='button' value='GitHub Repository' class='btn btn-primary m-4 p-2'>
+        </a>
+    </div>
+    <div [innerHTML]='project.description'></div>
+</div>

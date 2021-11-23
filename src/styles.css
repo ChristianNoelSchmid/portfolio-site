@@ -18,3 +18,9 @@ nav {
 body {
   font-family: var(--primary-font);
 }
+
+.anchor-section:before {
+  height: 48px;
+  content: "";
+  display:block;
+}
