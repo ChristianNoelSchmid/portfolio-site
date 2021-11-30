@@ -22,7 +22,7 @@
     "description": "Javascript is highly demanded among businesses, especially given it's benefits in full-stack web development. While I have worked with Javascript over the last 2 years, I am especially accustomed with it's static-typed counterpart Typescript, and have found a great integration between NodeJs and Angular."
   }, {
   "skillName": "Rust Language",
-  "backgroundImgSrc": "",
+  "backgroundImgSrc": "../../../assets/rs-back.png",
   "imgSrc": "../../../assets/rust.png",
   "skills": [
     "Parallel",

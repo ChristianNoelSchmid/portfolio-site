@@ -15,7 +15,7 @@
 }, {
     "name": "Resourceful Rails",
     "anchorTag": "resourceful-rails",
-    "backgroundImgSrc": "",
+    "backgroundImgSrc": "../../../assets/resourceful-rails.png",
     "githubLink": "https://github.com/Resourceful-Rails-Team/resourceful-rails-game",
     "description": "<p>Resourceful Rails was a team effort between three students, including myself. <h4>Features Implemented By Me</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/resourceful-rails-game/blob/main/Assets/Scripts/Systems/Pathfinding.cs' target='_blank'>A* multi-Pathfinding</a>, with algorithms focusing on shortest distance priority and shortest weight priority.</li><li><a href='https://github.com/Resourceful-Rails-Team/resourceful-rails-game/blob/main/Assets/Scripts/Collections/TrackGraph.cs' target='_blank'>Graph data structure</a>, with dfs vertex-set transform method.</li></ul>"
 }]
