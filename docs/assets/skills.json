@@ -3,22 +3,32 @@
     "backgroundImgSrc": "../../../assets/csharp-back.png",
     "imgSrc": "../../../assets/csharp.png",
     "skills": [
-      "C#",
       "ASP.NET Core",
+      "Parallel / Async",
+      "UDP / TCP",
       "Unity Engine"
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "description": "C# has been an active, popular language of choice for all kinds of software development - from webapps to desktop applications to video games. I have worked to be familiariazed with the best practices of modern C#, and its associated frameworks."
   }, {
     "skillName": "Javascript",
     "backgroundImgSrc": "../../../assets/js-back.png",
     "imgSrc": "../../../assets/js.png",
     "skills": [
-      "Javascript",
+      "EMCAScript 6",
       "Typescript",
       "Angular",
       "Express.js"
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "description": "Javascript is highly demanded among businesses, especially given it's benefits in full-stack web development. While I have worked with Javascript over the last 2 years, I am especially accustomed with it's static-typed counterpart Typescript, and have found a great integration between NodeJs and Angular."
+  }, {
+  "skillName": "Rust Language",
+  "backgroundImgSrc": "../../../assets/rs-back.png",
+  "imgSrc": "../../../assets/rust.png",
+  "skills": [
+    "Parallel",
+    "UDP / TCP"
+  ],
+  "description": "While it is not the most-sought skillset presently, learning Rust programming has had great benefit to my overall capability as a developer, especially in a parallel programming environment."
   }, {
     "skillName": "Google Cloud Platform",
     "backgroundImgSrc": "../../../assets/gc-back.png",
@@ -29,5 +39,6 @@
       "SQL Server",
       "App Engine"
     ],
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-}]
+    "description": "While programming is the most prominent part of software development, today's industry relies on a DevOps mindset, where developers can easily integrate their builds into a runtime environment. My education and personal training has helped me understand the nuances of several Google Cloud systems."
+  }
+]
