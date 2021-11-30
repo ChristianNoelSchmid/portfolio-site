@@ -1,19 +1,19 @@
 .hero-img {
   box-shadow: inset 0px 0px 10px #0009;
   background-image: linear-gradient(#0009, #000a),
-    url("../../../assets/hero.jpg");
+    url("../../assets/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
-
   width: 100%;
   height: 50vh;
-  padding-bottom: 10px;
+  padding-bottom: 80px;
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  background-position-x: right;
 }
 
 .btn-scroll {
@@ -35,23 +35,9 @@
   scale: 1.1;
 }
 
-.gray-slant {
-  background-image: url('../../../assets/gray-slant.png');
-  width: 100%;
-  height: 100px;
-  background-size: cover;
-}
-
-.gray-slant, .hero-content {
-  margin-top: -99px;
-}
-
 @media(min-width: 768px) {
   .hero-img {
     height: 100vh;
-    padding-bottom: 100px;
-  }
-  .btn-scroll {
-    visibility: visible;
-  }
+    padding-bottom: 180px;
+  } 
 }

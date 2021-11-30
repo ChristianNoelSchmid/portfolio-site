@@ -19,8 +19,16 @@ body {
   font-family: var(--primary-font);
 }
 
-.anchor-section:before {
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: white;
+}
+
+.anchor:before, .anchor:after {
   height: 48px;
   content: "";
-  display:block;
+  display: block;
 }

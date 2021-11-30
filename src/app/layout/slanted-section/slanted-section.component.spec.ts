@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AnimatedTextComponent } from './animated-text.component';
+import { SlantedSectionComponent } from './slanted-section.component';
 
-describe('DynTextComponent', () => {
-  let component: AnimatedTextComponent;
-  let fixture: ComponentFixture<AnimatedTextComponent>;
+describe('SlantedSectionComponent', () => {
+  let component: SlantedSectionComponent;
+  let fixture: ComponentFixture<SlantedSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AnimatedTextComponent ]
+      declarations: [ SlantedSectionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AnimatedTextComponent);
+    fixture = TestBed.createComponent(SlantedSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

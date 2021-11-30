@@ -1,4 +1,4 @@
-<section class='container'>
+<app-slanted-section [color]='"#555"' [flipped]=true [childClasses]='"container"'>
     <h2 class='mb-4'><b>My Skills</b></h2>
     <aside *ngFor='let skillGroup of skillGroups;'
         class='row justify-content-around align-items-center mt-4 p-4 skill-pane'
@@ -22,4 +22,4 @@
             <div class='col-lg-6 d-none d-lg-block skill-description' [innerHTML]='skillGroup.description'></div>
         </div>
     </aside>
-</section>
+</app-slanted-section>

@@ -9,7 +9,7 @@ nav {
 
 .nav-panel-scrolled {
   box-shadow: var(--text-shadow);
-  background-color: #444;
+  background-color: var(--alt-background-color);
 }
 
 @media(min-width: 768px) {

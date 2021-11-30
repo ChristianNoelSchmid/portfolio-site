@@ -4,4 +4,5 @@ export interface Project {
     backgroundImgSrc: string,
     githubLink: string,
     description: string,
+    next: string | undefined
 }

@@ -1,0 +1,28 @@
+.btn-scroll {
+  width: 64px;
+  height: 64px;
+
+  visibility: collapse;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-scroll svg {
+  fill: white;
+  transition: fill 0.25s, scale 0.25s;
+}
+
+.btn-scroll svg:hover {
+  fill: var(--primary-color);
+  scale: 1.1;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+@media(min-width: 768px) {
+  .btn-scroll {
+    visibility: visible;
+  }
+}

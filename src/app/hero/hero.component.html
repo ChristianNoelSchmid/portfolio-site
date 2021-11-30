@@ -1,0 +1,55 @@
+<section id='top' alt="A picture of Chris" class='hero-img'>
+    <div class='container row mb-4 align-items-center hero-content'>
+        <div class='col-md-10'>
+            <app-animated-text [animText]='animText'></app-animated-text>
+        </div>
+        <div class='col-md-2'>
+            <app-anchor-arrow [anchor]='"about-me"'></app-anchor-arrow>
+        </div>
+    </div>
+</section>
+
+<app-slanted-section class='anchor-section' [color]="'var(--alt-background-color)'" [childClasses]='"container"'>
+    <section id='about-me'>
+        <h2><b>My Current Progress</b></h2>
+        <p>
+            I'm currently wrapping up my Master's of Computer Science program at Portland State University. I
+            specialize
+            in systems programming and back-end web-development. My education has given me training for the modern
+            web
+            application platform, applying practices that ensure functional, maintainable, and secure environments.
+            Scroll down for more info!
+        </p>
+    </section>
+    <h2><b>Software Focuses</b></h2>
+    <p>
+        In software, there are several practices that are important to every project. These are the focuses I
+        have
+        when I develop:
+    </p>
+    <ol>
+        <div class='row my-2'>
+            <li class='col-xl-6 mt-2'>
+                Maintainability - software must be understandable to other developers, and capable of being built
+                upon.
+                The demands of the modern world require upgrades and improvements to software. I always emphasize
+                readability and future considerations of my code.
+            </li>
+            <li class='col-xl-6 mt-2'>
+                Security - software must be written in a way that can be received, and can respond to users without
+                affecting the integrity of the system itself. I've worked to research the best practices for
+                security in
+                modern software development.
+            </li>
+            <li class='col-xl-12 mt-2'>
+                Performance - software should be written in a way that maximizes the use of the hardware running it.
+                My
+                training has emphasized proper usage of memory and CPU to ensure the maximum potential for a
+                program. On
+                top of this, parallel programming is the present, and future of the software industry. I've striven
+                to
+                implement code that performs well in a multi-threaded environment.
+            </li>
+        </div>
+    </ol>
+</app-slanted-section>
