@@ -26,7 +26,8 @@ a:hover {
   color: white;
 }
 
-.anchor:before, .anchor:after {
+.anchor:before,
+.anchor:after {
   height: 48px;
   content: "";
   display: block;

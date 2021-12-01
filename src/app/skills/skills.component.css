@@ -1,4 +1,5 @@
-.skill-back, .skill-back-overlay {
+.skill-back,
+.skill-back-overlay {
   position: absolute;
 }
 
@@ -9,7 +10,7 @@
   height: 100%;
 
   background-color: transparent;
-  transition: background-color 0.5s; 
+  transition: background-color 0.5s;
 }
 
 .skill-pane {
@@ -51,5 +52,4 @@
   .focused {
     background-color: white;
   }
-  
 }

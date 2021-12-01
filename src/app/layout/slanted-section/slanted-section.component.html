@@ -1,10 +1,17 @@
 <!-- The slant graphic -->
-<svg [ngStyle]='{ "fill": color }' class='anchor-section slant' viewBox='0 0 100 100' preserveAspectRatio="none">
-    <polygon [attr.points]='flipped ? "100,100 0,0 0,100" : "0,100 100,0 100,100"' />
+<svg
+  [ngStyle]="{ fill: color }"
+  class="anchor-section slant"
+  viewBox="0 0 100 100"
+  preserveAspectRatio="none"
+>
+  <polygon
+    [attr.points]="flipped ? '100,100 0,0 0,100' : '0,100 100,0 100,100'"
+  />
 </svg>
 <!-- the inner content -->
-<section class='slanted-section pt-4' [ngStyle]='{"background-color": color }'>
-    <div [class]='childClasses'>
-        <ng-content></ng-content>
-    </div>
+<section class="slanted-section pt-4" [ngStyle]="{ 'background-color': color }">
+  <div [class]="childClasses">
+    <ng-content></ng-content>
+  </div>
 </section>

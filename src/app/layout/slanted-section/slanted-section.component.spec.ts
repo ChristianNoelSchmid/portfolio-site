@@ -8,9 +8,8 @@ describe('SlantedSectionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SlantedSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [SlantedSectionComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

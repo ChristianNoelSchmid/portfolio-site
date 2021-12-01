@@ -1,21 +1,25 @@
-[{
+[
+  {
     "name": "ChurchSearch",
     "anchorTag": "church-search",
     "backgroundImgSrc": "../../../assets/church.jpg",
     "githubLink": "https://github.com/christiannoelschmid/church-search",
     "description": "<p>Church search is a future, fullstack web application that seeks to connect individuals to faith-based organizations through a collection of questions that both parties take, which the webapp uses to associate individual to organization.</p><div class='row pt-4'><div class='col-md-6'><h4>Implemented Features</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/church-search/blob/main/src/controllers/auth-controller.ts' target='_blank'>User authentication</a>, using a combination of short-lived JSON web tokens, and a long-lived refresh tokens.</li><li>Backend database creation, and API interaction using Express.js and Prisma, with Typescript as the language of choice.</li></ul></div><div class='col-md-6'><h4>To Be Implemented</h4><ul><li>A frontend client, which handles API communications, created with the newest version of Angular.</li><li>Hosting of the webapp, using a combination of Google SQL Databases, Google Cloud Run, and Google Filestore.</li></ul></div></div>",
-    "next": "dungeon-crawler" 
-}, {
+    "next": "dungeon-crawler"
+  },
+  {
     "name": "Dungeon Crawler",
     "anchorTag": "dungeon-crawler",
     "backgroundImgSrc": "../../../assets/dungeon-crawler.png",
     "githubLink": "https://github.com/ChristianNoelSchmid/DungeonCrawler",
     "description": "<p>Dungeon Crawler is a small, student video game created with Rust, C# and Unity Engine. It features online multiplayer, with client to server communications.<h4>Implemented Features</h4><ul><li>Server UDP communications, with <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/crates/udp_server/src/ack_resolving.rs' target='_blank'>reliable datagram messaging</a>.</li><li>Server controlled-state, communicated to and manipulated by clients.</li><li>Unique AI features, such as <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/dungeon_crawler_server/src/astar.rs' target='_blank'>A* pathfinding</a> and <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/dungeon_crawler_server/src/state/ai/ai_package_manager.rs' target='_blank'>state-based decision-making</a>.</li><li>Client-side rendering of game environment.</li></ul>",
     "next": "resourceful-rails"
-}, {
+  },
+  {
     "name": "Resourceful Rails",
     "anchorTag": "resourceful-rails",
     "backgroundImgSrc": "../../../assets/resourceful-rails.png",
     "githubLink": "https://github.com/Resourceful-Rails-Team/resourceful-rails-game",
     "description": "<p>Resourceful Rails was a team effort between three students, including myself. <h4>Features Implemented By Me</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/resourceful-rails-game/blob/main/Assets/Scripts/Systems/Pathfinding.cs' target='_blank'>A* multi-Pathfinding</a>, with algorithms focusing on shortest distance priority and shortest weight priority.</li><li><a href='https://github.com/Resourceful-Rails-Team/resourceful-rails-game/blob/main/Assets/Scripts/Collections/TrackGraph.cs' target='_blank'>Graph data structure</a>, with dfs vertex-set transform method.</li></ul>"
-}]
+  }
+]

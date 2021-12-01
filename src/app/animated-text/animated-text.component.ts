@@ -4,14 +4,13 @@ import { AnimatedText } from './animated-text-interface';
 @Component({
   selector: 'app-animated-text',
   templateUrl: './animated-text.component.html',
-  styleUrls: ['./animated-text.component.css']
+  styleUrls: ['./animated-text.component.css'],
 })
 export class AnimatedTextComponent implements OnInit {
-
   /**
    * The static and dynamic text represented in this Component
    */
-  @Input() animText: AnimatedText = { staticText: "", dynamicText: [""] }
+  @Input() animText: AnimatedText = { staticText: '', dynamicText: [''] };
 
   /**
    * The element where the dynamic text will be written
@@ -40,7 +39,7 @@ export class AnimatedTextComponent implements OnInit {
    * adding them and removing them to the content
    */
   async loop() {
-    while(true) {
+    while (true) {
       await this.appendDynamicText();
       await this.sleep(1000);
       await this.removeDynamicText();
@@ -52,14 +51,13 @@ export class AnimatedTextComponent implements OnInit {
    * one character at a time
    */
   async appendDynamicText() {
-
     this.dynTextIndex += 1;
-    if(this.dynTextIndex >= this.animText?.dynamicText.length) {
+    if (this.dynTextIndex >= this.animText?.dynamicText.length) {
       this.dynTextIndex = 0;
     }
-    
+
     const text = this.animText.dynamicText[this.dynTextIndex];
-    for(let i = 0; i < text.length; ++i) {
+    for (let i = 0; i < text.length; ++i) {
       this.dynTextEl!.textContent += text[i];
       await this.sleep(50 + Math.random() * 100);
     }
@@ -72,13 +70,16 @@ export class AnimatedTextComponent implements OnInit {
   async removeDynamicText() {
     const text = this.animText.dynamicText[this.dynTextIndex];
 
-    for(let i = 0; i < text.length; ++i) {
-      this.dynTextEl!.textContent = this.dynTextEl!.textContent!.substring(0, this.dynTextEl!.textContent!.length - 1)
+    for (let i = 0; i < text.length; ++i) {
+      this.dynTextEl!.textContent = this.dynTextEl!.textContent!.substring(
+        0,
+        this.dynTextEl!.textContent!.length - 1
+      );
       await this.sleep(75);
     }
   }
 
   sleep(ms: number): Promise<void> {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
   }
 }

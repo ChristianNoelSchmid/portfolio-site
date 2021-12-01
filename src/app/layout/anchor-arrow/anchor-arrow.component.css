@@ -21,7 +21,7 @@
   transform: rotate(180deg);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .btn-scroll {
     visibility: visible;
   }

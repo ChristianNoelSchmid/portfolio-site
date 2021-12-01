@@ -12,7 +12,7 @@ nav {
   background-color: var(--alt-background-color);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   nav {
     max-height: 48px;
   }

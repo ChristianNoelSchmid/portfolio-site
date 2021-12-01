@@ -3,10 +3,9 @@ import { AfterViewInit, Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
-
   title = 'Christian S. Software';
 
   ngOnInit() {
@@ -35,15 +34,14 @@ export class AppComponent implements AfterViewInit {
 
   private addAnchorOffsets() {
     // Select all links with #
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       // Get the node associated with the anchor link
       const node = document.querySelector(anchor.getAttribute('href')!);
 
       // If the node exists, add the anchor class to it
-      if(node != null) {
+      if (node != null) {
         node.classList.add('anchor');
       }
     });
-
   }
 }

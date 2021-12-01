@@ -3,6 +3,6 @@
  * static and dynamic texts for an AnimatedTextComponent
  */
 export interface AnimatedText {
-    staticText: string,
-    dynamicText: string[],
+  staticText: string;
+  dynamicText: string[];
 }

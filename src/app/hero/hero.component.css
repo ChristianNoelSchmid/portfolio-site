@@ -1,7 +1,6 @@
 .hero-img {
   box-shadow: inset 0px 0px 10px #0009;
-  background-image: linear-gradient(#0009, #000a),
-    url("../../assets/hero.jpg");
+  background-image: linear-gradient(#0009, #000a), url("../../assets/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -35,9 +34,9 @@
   scale: 1.1;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .hero-img {
     height: 100vh;
     padding-bottom: 180px;
-  } 
+  }
 }

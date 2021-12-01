@@ -1,24 +1,46 @@
-<app-slanted-section [color]='"white"' [childClasses]='"container text-black"' id='contact'>
-    <div class='row justify-content-around align-items-center'>
-        <div class='col-md-5'>
-            <h2>Contact:</h2>
-            <p>I'd love to connect! Please send me a message if you'd like to set up a meeting.</p>
-        </div>
-        <form class='col-md-5'>
-            <div class='form-group mb-2'>
-                <label for='name'>Name</label>
-                <input type='text' class='form-control' id='name' placeholder='Enter your name'>
-            </div>
-            <div class='form-group mb-2'>
-                <label for='email'>Email</label>
-                <input type='email' class='form-control' id='email' placeholder='Enter your email address'>
-            </div>
-            <div class='form-group mb-2'>
-                <label for='message'>Message</label>
-                <textarea id='message' class='form-control'></textarea>
-            </div>
-            <input type='submit' class='btn btn-primary' value='Send'>
-        </form>
+<app-slanted-section
+  [color]="'white'"
+  [childClasses]="'container text-black'"
+  id="contact"
+>
+  <div class="row justify-content-around align-items-center">
+    <div class="col-md-5">
+      <h2>Contact:</h2>
+      <p>
+        I'd love to connect! Please send me a message if you'd like to set up a
+        meeting.
+      </p>
     </div>
+    <form href="#contact" class="col-md-5">
+      <div class="form-group mb-2">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div class="form-group mb-2">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter your email address"
+        />
+      </div>
+      <div class="form-group mb-2">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control"></textarea>
+      </div>
+      <input
+        type="submit"
+        class="btn btn-primary"
+        value="Send"
+        (click)="(sendMail)"
+      />
+    </form>
+  </div>
 </app-slanted-section>
-<footer class='text-center pt-4'>© Chrisitian Schmid</footer>
+<footer class="text-center pt-4">© Chrisitian Schmid</footer>
