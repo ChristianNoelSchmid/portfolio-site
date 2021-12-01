@@ -2,29 +2,20 @@
   position: absolute;
 }
 
-.skill-back {
-  z-index: -2;
-  background-size: 75px;
-  transform: skew(20deg) rotate(-20deg);
-  width: 200%;
-  height: 500%;
-}
-
 .skill-back-overlay {
+  position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
 
-  background-color: #0004;
-  transition: 1s; 
+  background-color: transparent;
+  transition: background-color 0.5s; 
 }
 
 .skill-pane {
+  margin: 1.5em 0;
   position: relative;
-  overflow:hidden;
-  z-index: 1;
 
-  border: solid 2px var(--alt-border-color);
   border-radius: 5px;
 }
 
@@ -33,13 +24,7 @@
 }
 
 .skill-description {
-  position: absolute;
   right: 2em;
-}
-
-
-.skill-pane * {
-  transition: width 0.5s, color 0.5s;
 }
 
 .skill-thumb {
@@ -64,7 +49,7 @@
     transition: background-color 0.25s;
   }
   .focused {
-    background-color: #0004;
+    background-color: white;
   }
   
 }

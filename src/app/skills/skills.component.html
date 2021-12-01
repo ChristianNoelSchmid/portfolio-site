@@ -1,25 +1,20 @@
-<app-slanted-section [color]='"#555"' [flipped]=true [childClasses]='"container"'>
-    <h2 class='mb-4'><b>My Skills</b></h2>
-    <aside *ngFor='let skillGroup of skillGroups;'
-        class='row justify-content-around align-items-center mt-4 p-4 skill-pane'
-        (mouseover)='setSkillGroup(skillGroup)' (mouseout)='setSkillGroup()'>
+<app-slanted-section [color]='"white"' [flipped]=true [childClasses]='"container text-black skill-list"'>
+    <h2 [@scrollFromLeft]='visibleGroupIndex >= 0 ? "onScreen" : "offScreen"'><b>My Skills</b></h2>
+    <aside *ngFor='let skillGroup of skillGroups; let i = index;'
+        [@scrollFromLeft]='visibleGroupIndex >= i + 1 ? "onScreen" : "offScreen"'
+        class='row justify-content-around align-items-center p-4 skill-pane'>
 
-        <!-- Skill group background / back overlay -->
-        <div class='skill-back' [ngStyle]='{ "background-image": "url(" + skillGroup.backgroundImgSrc + ")" }'></div>
-        <div class='skill-back-overlay' [class.focused]='skillGroup == selectedSkillGroup'></div>
         <!-- Skill group image -->
-        <img src='{{skillGroup.imgSrc}}' alt='{{skillGroup.skillName}}' class='col-lg-3 skill-thumb mb-4 mb-lg-0'>
+        <img src='{{skillGroup.imgSrc}}' alt='{{skillGroup.skillName}}'
+            class='col-lg-3 col-md-6 skill-thumb mb-4 mb-lg-0'>
 
-        <div class='col-lg-9 row skill-details text-lg-left align-items-center'
-            [class.sr-only]='skillGroup != selectedSkillGroup'>
-            <!-- Skill group skills -->
-            <ul class='col-lg-6'>
-                <li *ngFor='let skill of skillGroup.skills'>{{skill}}</li>
-            </ul>
+        <!-- Skill group skills -->
+        <ul class='col-lg-3 col-md-6'>
+            <li *ngFor='let skill of skillGroup.skills'>{{skill}}</li>
+        </ul>
 
-            <!-- Skill Group description -->
-            <!-- visible only on large devices -->
-            <div class='col-lg-6 d-none d-lg-block skill-description' [innerHTML]='skillGroup.description'></div>
-        </div>
+        <!-- Skill Group description -->
+        <!-- visible only on large devices -->
+        <div class='col-lg-6 d-none d-lg-block skill-description' [textContent]='skillGroup.description'></div>
     </aside>
 </app-slanted-section>

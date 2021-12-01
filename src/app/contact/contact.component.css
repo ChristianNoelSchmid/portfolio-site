@@ -1,0 +1,10 @@
+form {
+    background-color: #EFEFEF;
+    padding: 2em;
+    border-radius: 5px 5px 5px 5px;
+}
+
+footer {
+    min-height: 4em;
+    background-color: var(--alt-background-color);
+}

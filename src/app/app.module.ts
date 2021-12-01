@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
@@ -9,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PreviousWorkComponent } from './previous-work/previous-work.component';
 import { SlantedSectionComponent } from './layout/slanted-section/slanted-section.component';
 import { AnchorArrowComponent } from './layout/anchor-arrow/anchor-arrow.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,11 @@ import { AnchorArrowComponent } from './layout/anchor-arrow/anchor-arrow.compone
     PreviousWorkComponent,
     SlantedSectionComponent,
     AnchorArrowComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
