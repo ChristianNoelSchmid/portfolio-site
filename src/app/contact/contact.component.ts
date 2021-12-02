@@ -12,6 +12,8 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   public async sendMail() {
+    // For now, sendMail does not do anything
+    // TODO
     /*const name = document.querySelector('#name')?.getAttribute("value");
     const email = document.querySelector('#email')?.getAttribute("value");
     const message = document.querySelector('#email')?.getAttribute("message");
@@ -20,6 +22,5 @@ export class ContactComponent implements OnInit {
       this.mailingService.sendMessage(name, email, message)
         .subscribe(res => console.log(res.status))
     }*/
-    // For now, sendMail does not do anything
   }
 }
