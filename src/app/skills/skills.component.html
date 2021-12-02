@@ -3,12 +3,12 @@
   [flipped]="true"
   [childClasses]="'container text-black skill-list'"
 >
-  <h2 [@scrollFromLeft]="visibleGroupIndex >= 0 ? 'onScreen' : 'offScreen'">
+  <h2>
     <b>My Skills</b>
   </h2>
   <aside
     *ngFor="let skillGroup of skillGroups; let i = index"
-    [@scrollFromLeft]="visibleGroupIndex >= i + 1 ? 'onScreen' : 'offScreen'"
+    [@scrollFromLeft]="visibleGroupIndex >= i ? 'onScreen' : 'offScreen'"
     class="row justify-content-around align-items-center p-4 skill-pane"
   >
     <!-- Skill group image -->

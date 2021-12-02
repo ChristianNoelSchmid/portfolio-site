@@ -5,10 +5,13 @@
   z-index: 0;
   min-height: 50vh;
 
-  border-bottom: solid 1px var(--alt-background-color);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+.pane-margin {
+  height: 25vh;
+  background-color: var(--alt-background-color);
 }
 
 .anchor-arrow {

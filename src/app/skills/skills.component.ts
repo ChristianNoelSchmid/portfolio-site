@@ -48,7 +48,10 @@ export class SkillsComponent implements OnInit, AfterViewInit {
     setInterval(() => {
       skillsNodes.forEach((skillNode, i) => {
         const rect = skillNode.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 150 && this.visibleGroupIndex < i)
+        if (
+          rect.top < window.innerHeight - 150 &&
+          this.visibleGroupIndex < i - 1
+        )
           this.visibleGroupIndex += 1;
       });
     }, 100);
