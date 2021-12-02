@@ -1,3 +1,7 @@
+#about-me {
+  padding-top: 2em;
+}
+
 .hero-img {
   box-shadow: inset 0px 0px 10px #0009;
   background-image: linear-gradient(#0009, #000a), url("../../assets/hero.jpg");

@@ -12,7 +12,7 @@
 <app-slanted-section
   class="anchor-section"
   [color]="'var(--alt-background-color)'"
-  [childClasses]="'container'"
+  [childClasses]="'container pt-4'"
 >
   <section id="about-me">
     <h2><b>My Current Progress</b></h2>
@@ -25,7 +25,13 @@
       info!
     </p>
   </section>
-  <h2 class="mb-4"><b>Software Focuses</b></h2>
+</app-slanted-section>
+<app-slanted-section [color]="'white'"></app-slanted-section>
+<app-slanted-section
+  [color]="'var(--alt-background-color)'"
+  [childClasses]="'container'"
+>
+  <h2 class="text-center pb-4"><b>Software Focuses</b></h2>
   <div class="row">
     <div class="col-xl-4 col-md-6 d-flex flex-column align-items-center mb-4">
       <svg
