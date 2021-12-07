@@ -12,6 +12,7 @@ import { PreviousWorkComponent } from './previous-work/previous-work.component';
 import { SlantedSectionComponent } from './layout/slanted-section/slanted-section.component';
 import { AnchorArrowComponent } from './layout/anchor-arrow/anchor-arrow.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,12 @@ import { ContactComponent } from './contact/contact.component';
     AnchorArrowComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

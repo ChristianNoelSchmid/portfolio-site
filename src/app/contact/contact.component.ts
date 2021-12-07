@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MailingService } from '../mailing.service';
 
 @Component({
@@ -9,18 +9,24 @@ import { MailingService } from '../mailing.service';
 export class ContactComponent implements OnInit {
   constructor(private mailingService: MailingService) {}
 
+  @Input() public name: string = '';
+  @Input() public email: string = '';
+  @Input() public message: string = '';
+
   ngOnInit(): void {}
 
-  public async sendMail() {
-    // For now, sendMail does not do anything
-    // TODO
-    /*const name = document.querySelector('#name')?.getAttribute("value");
-    const email = document.querySelector('#email')?.getAttribute("value");
-    const message = document.querySelector('#email')?.getAttribute("message");
+  public sendMail(event: Event) {
+    // Ensure the form doesn't navigate away
+    event.preventDefault();
 
-    if(name && email && message) {
-      this.mailingService.sendMessage(name, email, message)
-        .subscribe(res => console.log(res.status))
-    }*/
+    console.log(`${this.name} <${this.email}>: ${this.message}`);
+
+    if (this.name && this.email && this.message) {
+      this.mailingService
+        .sendMessage(this.name, this.email, this.message)
+        .subscribe((res) => {
+          console.log(`${res.status}: ${res.body}`);
+        });
+    }
   }
 }

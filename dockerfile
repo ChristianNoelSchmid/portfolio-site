@@ -1,11 +1,13 @@
 #stage 1
-FROM node:latest as node
-WORKDIR /app
-COPY . .
-RUN npm install -g @angular/cli
+FROM node:latest as builder
+WORKDIR /usr/src/app
+COPY package.json package-lock.json ./
+
 RUN npm install
-RUN ng build --outputPath=dist --baseHref=/
+COPY . .
+
+RUN npm run build --prod
 
 #stage 2
 FROM nginx:alpine
-COPY --from=node /app/dist/ /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/resume-site /usr/share/nginx/html

@@ -14,8 +14,8 @@
             },
             "group": "build"
         }, {
-            "label": "Build Site",
-            "command": "ng build --outputPath=docs --baseHref=/",
+            "label": "Containerize Site",
+            "command": "sudo docker build -t christiannoelschmid/resume-site .",
             "type": "shell",
             "args": [],
             "problemMatcher": [

@@ -6,7 +6,8 @@ import { catchError } from 'rxjs';
   providedIn: 'root',
 })
 export class MailingService {
-  mailingHost: string = 'http://localhost:3000';
+  mailingHost: string =
+    'https://us-west1-cs495-christian-schmid-cschmid.cloudfunctions.net/resume-site-send-contact-message';
 
   constructor(private http: HttpClient) {}
 
@@ -20,8 +21,9 @@ export class MailingService {
     body.append('email', email);
     body.append('message', message);
 
-    return this.http
-      .post(this.mailingHost, body, { observe: 'response' })
-      .pipe(catchError(() => []));
+    return this.http.post(this.mailingHost, body, {
+      observe: 'response',
+      responseType: 'text',
+    });
   }
 }
