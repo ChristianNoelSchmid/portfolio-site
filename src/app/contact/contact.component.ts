@@ -12,21 +12,35 @@ export class ContactComponent implements OnInit {
   @Input() public name: string = '';
   @Input() public email: string = '';
   @Input() public message: string = '';
+  public isSending: boolean = false;
+  public loadRotation: number = 0;
+  public sendStatus: string = '';
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    setInterval(() => (this.loadRotation += 12), 20);
+  }
 
   public sendMail(event: Event) {
     // Ensure the form doesn't navigate away
     event.preventDefault();
 
-    console.log(`${this.name} <${this.email}>: ${this.message}`);
-
     if (this.name && this.email && this.message) {
+      this.sendStatus = 'Sending...';
+      this.isSending = true;
+
       this.mailingService
         .sendMessage(this.name, this.email, this.message)
         .subscribe((res) => {
+          if (res.status == 200) this.sendStatus = 'Sent!';
+          else
+            this.sendStatus =
+              'Oops! There was a problem. Please try again later.';
+
           console.log(`${res.status}: ${res.body}`);
+          this.isSending = false;
         });
+    } else {
+      this.sendStatus = 'Please fill out all the boxes. Thanks!';
     }
   }
 }
