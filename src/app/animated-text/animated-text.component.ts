@@ -34,6 +34,10 @@ export class AnimatedTextComponent implements OnInit {
     await this.loop();
   }
 
+  public screenWidth(): number {
+    return window.innerWidth;
+  }
+
   /**
    * Continually cycles through the dynamic texts
    * adding them and removing them to the content
