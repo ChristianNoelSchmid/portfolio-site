@@ -6,7 +6,6 @@
   min-height: 50vh;
 
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
 }
 .pane-margin {
@@ -21,6 +20,7 @@
 
 @media (min-width: 768px) {
   .project-pane {
+    background-attachment: fixed;
     min-height: 100vh;
   }
 }
