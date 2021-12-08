@@ -4,16 +4,11 @@
 
 .hero-img {
   box-shadow: inset 0px 0px 10px #0009;
-  background-image: linear-gradient(#0009, #000a), url("../../assets/hero.jpg");
+  background-image: linear-gradient(#0009, #000a),
+    url("../../assets/hero_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* Non-Safari positioning */
-  background-position-x: 85%;
-  background-position-y: 70%;
-
-  /* Safari positioning */
-  background-position: top 70% left 85%;
 
   width: 100%;
   height: 75vh;
@@ -47,5 +42,10 @@
   .hero-img {
     height: 100vh;
     padding-bottom: 180px;
+    background-image: linear-gradient(#0009, #000a),
+      url("../../assets/hero.jpg");
+
+    background-position-x: 85%;
+    background-position-y: 70%;
   }
 }
