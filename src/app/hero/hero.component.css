@@ -8,8 +8,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* Non-Safari positioning */
   background-position-x: 85%;
   background-position-y: 70%;
+
+  /* Safari positioning */
+  background-position: top 70% left 85%;
 
   width: 100%;
   height: 75vh;
