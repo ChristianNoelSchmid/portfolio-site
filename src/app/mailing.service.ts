@@ -7,7 +7,7 @@ import { catchError } from 'rxjs';
 })
 export class MailingService {
   mailingHost: string =
-    'https://us-west1-cs495-christian-schmid-cschmid.cloudfunctions.net/resume-site-send-contact-message';
+    'https://us-west1-christian-s-software.cloudfunctions.net/portfolio-site-send-message';
 
   constructor(private http: HttpClient) {}
 
