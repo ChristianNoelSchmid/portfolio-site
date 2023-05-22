@@ -33,7 +33,7 @@
         *ngIf="project.mediaType === 'video'"
         [class]="(loaded[i] ? (project.mediaSizing === 'square' ? 'square-media' : 'mobile-media') : '')"
         (canplay)="loadAndPlay(i)"
-        playsinline muted autoplay loop>
+        playsinline muted autoplay loop controls>
         <source [src]="project.mediaSource" type="video/mp4">
       </video>
       <div
