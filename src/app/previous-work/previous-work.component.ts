@@ -11,20 +11,16 @@ import { Project } from './project.interface';
 })
 export class PreviousWorkComponent implements OnInit {
   projects: Project[] = importJsonArray(projectsTemplate);
-  constructor() {}
+  loaded: boolean[] = []
 
-  public priorProject(project: Project): string | undefined {
-    const index = this.projects.indexOf(project) - 1;
-    if (index < 0) return undefined;
+  constructor() {
+    for(let i = 0; i < this.projects.length; i += 1) { 
+      this.loaded.push(false); 
+    }
+  } 
 
-    return `${this.projects[index].anchorTag}`;
-  }
-
-  public nextProject(project: Project): string | undefined {
-    const index = this.projects.indexOf(project) + 1;
-    if (index == 0 || index > this.projects.length - 1) return undefined;
-
-    return `${this.projects[index].anchorTag}`;
+  loadAndPlay(idx: number) { 
+    this.loaded[idx] = true;
   }
 
   ngOnInit(): void {}

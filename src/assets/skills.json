@@ -3,28 +3,28 @@
     "skillName": "C#",
     "backgroundImgSrc": "../../../assets/csharp-back.png",
     "imgSrc": "../../../assets/csharp.png",
-    "skills": ["ASP.NET Core", "Parallel / Async", "UDP / TCP", "Unity Engine"],
+    "skills": ["ASP.NET Core 7.0", "UDP / TCP", "Unity Engine", "Godot 4.0"],
     "description": "C# has been an active, popular language of choice for all kinds of software development - from webapps to desktop applications to video games. I have worked to be familiariazed with the best practices of modern C#, and its associated frameworks."
-  },
-  {
-    "skillName": "Javascript",
-    "backgroundImgSrc": "../../../assets/js-back.png",
-    "imgSrc": "../../../assets/js.png",
-    "skills": ["EMCAScript 6", "Typescript", "Angular", "Express.js"],
-    "description": "Javascript is highly demanded among businesses, especially given it's benefits in full-stack web development. While I have worked with Javascript over the last 2 years, I am especially accustomed with it's static-typed counterpart Typescript, and have found a great integration between NodeJs and Angular."
   },
   {
     "skillName": "Rust Language",
     "backgroundImgSrc": "../../../assets/rs-back.png",
     "imgSrc": "../../../assets/rust.png",
-    "skills": ["Parallel", "UDP / TCP"],
-    "description": "While it is not the most-sought skillset presently, learning Rust programming has had great benefit to my overall capability as a developer, especially in a parallel programming environment."
+    "skills": ["async/await", "UDP / TCP", "Rocket"],
+    "description": "Rust is a fast, ergonomic, and maintainable language. The ownership system has influenced the way I write in other languages - side-effects are one of the biggests issues with maintainable software, and Rust mitigates the problem in a way that is a joy to work with, in the same performance tier as C/C++."
+  },
+  {
+    "skillName": "Javascript",
+    "backgroundImgSrc": "../../../assets/js-back.png",
+    "imgSrc": "../../../assets/js.png",
+    "skills": ["EMCAScript 6", "Express.js", "Vue"],
+    "description": "Javascript is highly demanded among businesses, especially given it's benefits in full-stack web development. I've found great integration between it and Vue.js for fullstack development."
   },
   {
     "skillName": "Google Cloud Platform",
     "backgroundImgSrc": "../../../assets/gc-back.png",
     "imgSrc": "../../../assets/google-cloud.png",
-    "skills": ["Compute Engine", "Cloud Storage", "SQL Server", "App Engine"],
+    "skills": ["Compute Engine", "Cloud Storage", "App Engine"],
     "description": "While programming is the most prominent part of software development, today's industry relies on a DevOps mindset, where developers can easily integrate their builds into a runtime environment. My education and personal training has helped me understand the nuances of several Google Cloud systems."
   }
 ]

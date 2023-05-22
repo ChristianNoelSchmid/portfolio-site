@@ -1,33 +1,40 @@
 [
   {
-    "name": "ChurchSearch",
-    "anchorTag": "church-search",
-    "backgroundImgSrc": "../../../assets/church.jpg",
-    "githubLink": "https://github.com/christiannoelschmid/church-search",
-    "description": "<p>Church search is a future, fullstack web application that seeks to connect individuals to faith-based organizations through a collection of questions that both parties take, which the webapp uses to associate individual to organization.</p><div class='row pt-4'><div class='col-md-6'><h4>Implemented Features</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/church-search/blob/main/src/controllers/auth-controller.ts' target='_blank'>User authentication</a>, using a combination of short-lived JSON web tokens, and a long-lived refresh tokens.</li><li>Backend database creation, and API interaction using Express.js and Prisma, with Typescript as the language of choice.</li></ul></div><div class='col-md-6'><h4>To Be Implemented</h4><ul><li>A frontend client, which handles API communications, created with the newest version of Angular.</li><li>Hosting of the webapp, using a combination of Google SQL Databases, Google Cloud Run, and Google Filestore.</li></ul></div></div>",
-    "next": "threehundred-messenger"
-  },
-  {
     "name": "300Messenger",
     "anchorTag": "threehundred-messenger",
-    "backgroundImgSrc": "../../../assets/300messenger.png",
+    "mediaType": "video",
+    "mediaSource": "https://storage.googleapis.com/christianssoftware_com/300Messenger%202023-05-21.mp4",
+    "mediaSizing": "mobile",
     "githubLink": "https://github.com/christiannoelschmid/300Messenger",
-    "description": "<p>300Messenger is a student project that utilizes several microservices that allows users to send and receive messages from other users. Written with Asp.Net / C#, combined with a Xamarin mobile front-end.</p><h4>Implemented Features</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Accounts/Controllers/AccountController.cs' target='_blank'>Account authorization / authentication</a></li><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Images/Controllers/ImageController.cs' target='_blank'>Image uploading / static hosting</a></li><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Messages/Controllers/MessageSessionController.cs' target='_blank'>Message sessions: sending / receiving text messages</a></li><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Friendships/Controllers/FriendshipController.cs' target='_blank'>Friendship statuses / confirmation.</a></li></ul>",
+    "description": "<p>300Messenger is a student project that utilizes several microservices that allows users to send and receive messages from other users. Written with Asp.Net / C#, combined with a Xamarin mobile front-end.</p><h4>Implemented Features</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Accounts/Controllers/AccountController.cs' target='_blank'>JWT Account authorization / authentication</a></li><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Images/Controllers/ImageController.cs' target='_blank'>Image uploading / static hosting</a></li><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Messages/Controllers/MessageSessionController.cs' target='_blank'>Message sessions: sending / receiving text messages</a></li><li><a href='https://github.com/ChristianNoelSchmid/300Messenger/blob/master/Friendships/Controllers/FriendshipController.cs' target='_blank'>Friendship statuses / confirmation.</a></li></ul>",
     "next": "dungeon-crawler"
+  },
+  {
+    "name": "Budget App",
+    "anchorTag": "schmeconomics",
+    "mediaType": "video",
+    "mediaSource": "https://storage.googleapis.com/christianssoftware_com/Schmeconomics.mp4",
+    "mediaSizing": "mobile",
+    "githubLink": "https://github.com/ChristianNoelSchmid/schmeconomics_server",
+    "description": "<p>A small budget web application written with a Rust (Rocket) backend and Vue front-end</p><h4>Implemented Features</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/schmeconomics-server/blob/main/src/sqlite.rs' target='_blank'>Sqlite database implementation,</a> with custom macros for ergonimics.</li><li><a href='https://github.com/ChristianNoelSchmid/schmeconomics-server/blob/main/src/auth.rs' target='_blank'>Basic authorization</a></li><li><a href='https://github.com/ChristianNoelSchmid/schmeconomics-client' target='_blank'>Single-page application front-end</a>, built with Vue</li></ul>"
   },
   {
     "name": "Dungeon Crawler",
     "anchorTag": "dungeon-crawler",
-    "backgroundImgSrc": "../../../assets/dungeon-crawler.png",
+    "mediaType": "video",
+    "mediaSource": "https://storage.googleapis.com/christianssoftware_com/Dungeon%20Crawler.mp4",
+    "mediaSizing": "square",
     "githubLink": "https://github.com/ChristianNoelSchmid/DungeonCrawler",
     "description": "<p>Dungeon Crawler is a small, student video game created with Rust, C# and Unity Engine. It features online multiplayer, with client to server communications.</p><h4>Implemented Features</h4><ul><li>Server UDP communications, with <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/crates/udp_server/src/ack_resolving.rs' target='_blank'>reliable datagram messaging</a>.</li><li>Server controlled-state, communicated to and manipulated by clients.</li><li>Unique AI features, such as <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/dungeon_crawler_server/src/astar.rs' target='_blank'>A* pathfinding</a> and <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/dungeon_crawler_server/src/state/ai/ai_package_manager.rs' target='_blank'>state-based decision-making</a>.</li><li>Client-side rendering of game environment.</li></ul>",
     "next": "resourceful-rails"
   },
   {
-    "name": "Resourceful Rails",
-    "anchorTag": "resourceful-rails",
-    "backgroundImgSrc": "../../../assets/resourceful-rails.png",
-    "githubLink": "https://github.com/Resourceful-Rails-Team/resourceful-rails-game",
-    "description": "<p>Resourceful Rails was a team effort between three students, including myself.</p><h4>Features Implemented By Me</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/resourceful-rails-game/blob/main/Assets/Scripts/Systems/Pathfinding.cs' target='_blank'>A* multi-Pathfinding</a>, with algorithms focusing on shortest distance priority and shortest weight priority.</li><li><a href='https://github.com/Resourceful-Rails-Team/resourceful-rails-game/blob/main/Assets/Scripts/Collections/TrackGraph.cs' target='_blank'>Graph data structure</a>, with dfs vertex-set transform method.</li></ul>"
+    "name": "Dungeoner",
+    "anchorTag": "dungeoner",
+    "mediaType": "video",
+    "mediaSource": "https://storage.googleapis.com/christianssoftware_com/Dungeoner.mp4",
+    "mediaSizing": "square",
+    "githubLink": "https://github.com/ChristianNoelSchmid/dungeoner",
+    "description": "<p>A work-in-progress table-top roleplaying application, which will seek to unify the core features of roleplaying systems.<br>It's being built with C#, using the Godot game engine.</p><h4>Implemented Features</h4><ul><li>Token manipulation: <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/token_manipulation/SelectionTool.cs' target='_blank'>selection</a>, <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/token_manipulation/DraggingTool.cs' target='_blank'>dragging</a>, and <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/token_manipulation/ResizingTool.cs' target='_blank'>resizing</a>.</li><li>Map building: <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/painters/TilePainter.cs' target='_blank'>tiles</a> and <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/painters/WallPainter.cs' target='_blank'>walls.</a></li><li>Network communications, using UDP datagrams, with <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/network_events/tokens/TokensTransformedEventHandler.cs' target='_blank'>event handlers</a> built into Godot's Node component system.</li></ul>"
   }
 ]
