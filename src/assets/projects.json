@@ -17,24 +17,6 @@
     "mediaSizing": "mobile",
     "githubLink": "https://github.com/ChristianNoelSchmid/schmeconomics_server",
     "description": "<p>A small budget web application written with a Rust (Rocket) backend and Vue front-end</p><h4>Implemented Features</h4><ul><li><a href='https://github.com/ChristianNoelSchmid/schmeconomics-server/blob/main/src/sqlite.rs' target='_blank'>Sqlite database implementation,</a> with custom macros for ergonimics.</li><li><a href='https://github.com/ChristianNoelSchmid/schmeconomics-server/blob/main/src/auth.rs' target='_blank'>Basic authorization</a></li><li><a href='https://github.com/ChristianNoelSchmid/schmeconomics-client' target='_blank'>Single-page application front-end</a>, built with Vue</li></ul>"
-  },
-  {
-    "name": "Dungeon Crawler",
-    "anchorTag": "dungeon-crawler",
-    "mediaType": "video",
-    "mediaSource": "https://storage.googleapis.com/christianssoftware_com/Dungeon%20Crawler.mp4",
-    "mediaSizing": "square",
-    "githubLink": "https://github.com/ChristianNoelSchmid/DungeonCrawler",
-    "description": "<p>Dungeon Crawler is a small, student video game created with Rust, C# and Unity Engine. It features online multiplayer, with client to server communications.</p><h4>Implemented Features</h4><ul><li>Server UDP communications, with <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/crates/udp_server/src/ack_resolving.rs' target='_blank'>reliable datagram messaging</a>.</li><li>Server controlled-state, communicated to and manipulated by clients.</li><li>Unique AI features, such as <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/dungeon_crawler_server/src/astar.rs' target='_blank'>A* pathfinding</a> and <a href='https://github.com/ChristianNoelSchmid/DungeonCrawler/blob/pdx-project/dungeon_crawler_server/src/state/ai/ai_package_manager.rs' target='_blank'>state-based decision-making</a>.</li><li>Client-side rendering of game environment.</li></ul>",
-    "next": "resourceful-rails"
-  },
-  {
-    "name": "Dungeoner",
-    "anchorTag": "dungeoner",
-    "mediaType": "video",
-    "mediaSource": "https://storage.googleapis.com/christianssoftware_com/Dungeoner.mp4",
-    "mediaSizing": "square",
-    "githubLink": "https://github.com/ChristianNoelSchmid/dungeoner",
-    "description": "<p>A work-in-progress table-top roleplaying application, which will seek to unify the core features of roleplaying systems.<br>It's being built with C#, using the Godot game engine.</p><h4>Implemented Features</h4><ul><li>Token manipulation: <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/token_manipulation/SelectionTool.cs' target='_blank'>selection</a>, <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/token_manipulation/DraggingTool.cs' target='_blank'>dragging</a>, and <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/token_manipulation/ResizingTool.cs' target='_blank'>resizing</a>.</li><li>Map building: <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/painters/TilePainter.cs' target='_blank'>tiles</a> and <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/painters/WallPainter.cs' target='_blank'>walls.</a></li><li>Network communications, using UDP datagrams, with <a href='https://github.com/ChristianNoelSchmid/dungeoner/blob/main/network_events/tokens/TokensTransformedEventHandler.cs' target='_blank'>event handlers</a> built into Godot's Node component system.</li></ul>"
   }
+  
 ]
